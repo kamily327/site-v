@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+html {
+    scroll-behavior: smooth;
+}
+a{
+    border-bottom:1px solid #f13239 ;
+    transition: color 0.2s border-bottom 0.8s;
+    text-decoration: none;
+    white-space:nowrap;
+}
+#h1-div{
+    display: flex;
+    justify-content: center;
+    padding: 50px 0 30px;
+    
+ }
+ h1 {
+     text-align: center;
+     background-color: #db2026;
+     border-radius: 5px;
+     color: #ebebeb;
+     padding: 5px 14px;
+     font-size: 35pt;
+     font-family: "Bebas Neue", serif; 
+     font-weight: 400;
+ }
+
+
+
+h2{
+    margin-bottom: 24px;
+    border-left: 4px solid #f13239;
+    padding-left: 8px;
+}
+#container{
+    max-width: 1200px;
+    margin: 0 auto;
+  
+}
+#history #container img{
+    width: 100%;
+}
+header img{
+  width: 180px;
+  padding:5px 0px 0px;
+  margin-top: 0.5%;
+  
+}
+header #container{
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    row-gap: 8px;
+    padding: 0 34px;
+    column-gap: 24px;
+    justify-content: space-between;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+   
+}
+header li + li {
+    margin-left: 24px;
+}
+header #container a {
+    color: #ebebeb;
+    transition: color 0.3s,border 0.3s;
+    padding: 0 0 1px;
+}
+header #container a:hover,
+header #container a:focus
+{
+    color: #f13239;   
+}
+
+#menu-mbl{
+    display: none;
+}
+#hero{
+    display: flex;
+    height: auto;
+    min-height: 320px;
+    background-size: cover;
+    object-fit: contain;
+    background-position: center 18%;
+    background-image: url('../images/banner1.jpg');
+    transition: background-image 0.1s;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 24px;
+    flex-direction: column;
+}
+
+
+#dot{
+    display: flex;   
+}
+#dot button{
+  background-color: #ebebeb;
+  border-radius: 50%;
+  width: 18px;
+  height: 14px;
+  border: none;
+  cursor: pointer;
+}
+#dot button:focus{
+    outline: none;
+}
+#dot button+button{
+    margin-left: 8px;
+}
+#dot button:focus{
+ background: #f13239;
+}
+#gallery {
+ padding: 64px 24px 96px;
+}
+#gallery h2{
+ color: #111111
+}
+#dark, .dark{
+    color: #ebebeb;
+    background: #111111;
+}
+#dark-link{
+    color: #f13239;
+}
+#dark-link:hover{
+    color: #ebebeb;
+}
+#gallery-row{
+    margin: 0 auto;
+    gap: 24px;
+    display: flex;
+    flex-wrap: wrap;
+}
+#gallery-row figure {
+   flex: 1 1 250px;
+   
+}
+#gallery-row img {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 16px;
+}
+#gallery-row  figcaption{
+ font-weight: bold;
+}
+#history a:hover , footer a:hover{
+    color: #ebebeb;
+    border-bottom: 1px solid #ebebeb;
+}
+#history{
+    padding: 74px 30px 40px;
+    border-top: 4px solid #f13239;
+    
+}
+#history #container{
+    border-bottom:1px solid #f13239 ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+#history #container p + p  {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    color: #f13239;
+}
+
+
+#col{
+    color: #ebebeb;
+}
+
+
+#container #col {
+    flex: 1 1 350px;
+}
+#voltar a {
+   background: #f13239;
+   color: #111111 ;
+   padding: 5px;
+   border-radius: 5px;
+  
+}
+#voltar a:hover{
+  border: none;
+}
+
+footer #container{
+    text-align: center;
+    padding: 20px 24px 50px ;
+    font-size: 11pt;
+}
+footer a {
+    color: #f13239;
+    transition: color 0.2s;
+   
+}
+
+
+@media screen and (max-width:600px) {
+
+   h1{
+     font-size: 25pt;
+     padding: 0 24px;
+     text-align: center;
+   }
+
+    header #container{
+        justify-content: space-between;
+        padding: 0 24px;
+        height: 80px;
+    }
+ #hero{ 
+   height: auto;
+   min-height: 270px;
+   padding: 16px;
+}
+   header #container img {
+       
+        padding-top: 10px;
+    }
+    nav{
+       display: none;
+    }
+    #menu-mbl{
+      display:flex;
+    }
+    #menu-toggle{
+       font-size: 24px; 
+       padding-right: 18px;
+       background: none;
+       border: none;
+       color: white;
+       cursor: pointer;
+    }
+    #menuList{
+        position: absolute;
+        padding: 0;
+        margin: 0;
+        left: 45%;
+        top: -0.1%;
+        display: none;
+        list-style: none;
+        flex-direction: column;
+         width: 60%;
+        background-color: #ebebeb;
+        height: 100vh;
+        opacity: 0.9;
+      
+       
+    }
+    #menuList li {
+        text-align:left;
+        margin: 0;
+        padding: 10px 20px;
+        font-size: 20pt;
+    }
+  #container  #menuList a {
+         color: #111111;
+         opacity: 0.9;
+        font-family: "Bebas Neue", serif;
+        border: none;
+       
+    }
+   #container #menuList a:hover{
+        color: #f13239;
+    }
+    #menu-close{
+    
+        font-size: 25pt;
+        color: rgba(116, 114, 114, 0.651);
+        text-align: left;
+        padding: 10px 15px 5px;
+        background: none;
+        margin-bottom: 30px;
+    }
+    #menu-close:hover{
+        color: #f13239;
+        
+    }
+    #menuList button {
+        border-bottom: 1px solid #ccc;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+    }
+  
+    #menuList.active{
+        display: flex;
+    }
+    #dot span {
+        width:10px ;
+        height: 10px;
+    }
+    #history #container p + p {
+        margin-bottom: 20px;
+    }
+    #voltar{
+        padding: 4px 0 15px;
+        font-size: 11pt;
+    }
+}
+   
